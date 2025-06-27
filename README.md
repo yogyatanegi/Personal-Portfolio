@@ -31,12 +31,19 @@ This site highlights my skills, projects, and professional journey as a **Full S
 
 Personal-Portfolio/
 ├── img/                  # All images used in the site
-├── session/              # Additional HTML sessions (if any)
+
+├── session/              # Additional HTML sessions 
+
 ├── style.css             # Main stylesheet
+
 ├── index.html            # Main entry point (homepage)
+
 ├── pese.html             # PESE section
-├── f.css                 # Additional styles (if any)
+
+├── f.css                 # Additional styles 
+
 ├── Yogyata\_Negi.pdf      # Downloadable resume
+
 └── README.md             # This file
 
 
