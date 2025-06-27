@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogyata Negi Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8c4569df52.js" crossorigin="anonymous"></script>
+    <script>
+        /*----------nav--------*/
+        function toggleNav() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+        /*--------about--------*/
+        var tablinks = document.getElementsByClassName("tab-links");
+    var tabcon = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (var tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (var tabcontent of tabcon) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div id="logo"><h1><span class="mname">Y</span>ogyata_Negi.</h1></div>
+        <ul id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div id="nav-icon" onclick="toggleNav()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    <!-- Home Section -->
+    <div id="home">
+         <img src="C:\Users\yogyatanegi\Documents\code\Project\GitHub\Portfolio\img\account-icon-lg.png" id="img" >
+        <div  ></div>
+        <div id="name">
+            <p>Hii <span id="emoji">👋</span>, my name is <span class="mname">Yogyata Negi</span></p>
+            <p>I am a full stack Developer</p>
+            <a href="Yogyata_Negi.pdf" class="btn" download>My Resume</a>
+        </div>
+    </div>
+    <!-- About Section -->
+    <div id="about">
+        <div id="ab"><p>About Me</p></div>
+        <div id="abm">
+            <img src="C:\Users\yogyatanegi\Documents\code\Project\GitHub\Portfolio\img\02.png" id="abmg">
+            <div id="info">
+                <div id="aboutme"><p>Hii, I am Yogyata Negi, a passionate full stack developer with experience in building dynamic web applications. I enjoy solving complex problems and constantly strive to improve my skills and knowledge. In my spare time, I love exploring new technologies and contributing to open-source projects.</p></div>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                  <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Web Technology</span><br>HTML, CSS, Java Script, Bootstrap</li>
+                    <li><span>Programming Language</span><br>C, C++, Java</li>
+                    <li><span>Java Technology</span><br>JDBC, Servlet ,JSP</li>
+                    <li><span>Frameworks & Libraries</span><br>Spring Boot, Hibernate </li>
+                    <li><span>Database</span><br>MySql, Orecle</li>
+                    <li><span>Other</span><br> Data Structures and Algorithms (DSA), Git</li>
+                </ul>
+                   
+                  </div>
+                  <div class="tab-contents"id="experience">
+                    <ul>
+                        <li><span>Internship
+                        </span><br><br>Internship of Three Months as a Software Developer intern<br>Bluestock</li>
+                        <li><span><br></span><br>Internship of Three Months as a Software Developer intern<br>Travifie<br></li>
+                    </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+    <ul>
+        <li><span>Current pursuing (B.Tech CSE)</span><br>Graphic Era Hill University<br>
+        Dehradun (Uttarakhand)</li>
+        
+        <li><span><br>Higher Education (12th) - 2022</span><br>Subash Chandra Bose Academy<br>
+        Dehradun, Uttarakhand</li>
+        
+        <li><span><br>Secondary Education (10th) - 2020</span><br>Subash Chandra Bose Academy<br>
+        Dehradun, Uttarakhand</li> 
+        
+       <li>
+        <span><a href="pese.html" style="text-decoration: none; color: #f3f0f5;">PESE (Practical for Employability Skill Enhancement (L))</a></span>
+</li>
+
+    </ul>
+</div>
+
+            </div>
+        </div>
+    </div>
+<!---------------services----------------->
+<div id="services">
+    <div class="servi">
+        <p class="job-title" style="color: aliceblue;">My Web Development Services</p>
+    </div>
+    <div class="services-list">
+        <!-- 1. React Development -->
+        <div class="con">
+            <h3>React & React Native Apps</h3>
+            <p>Build high-performance web and mobile applications with React.js and React Native. I specialize in:</p>
+            <ul>
+                <li>Component-based architecture</li>
+                <li>State management (Redux/Context API)</li>
+                <li>RESTful API integration (like in Travifai project)</li>
+                <li>Cross-platform mobile development</li>
+            </ul>
+        </div>
+
+        <!-- 2. Full-Stack -->
+        <div class="con">
+            <h3>Full-Stack Web Apps</h3>
+            <p>End-to-end solutions using MERN stack and Spring Boot:</p>
+            <ul>
+                <li>UI/UX design with Figma</li>
+                <li>Backend microservices (4+ built at Travifai)</li>
+                <li>MongoDB/MySQL database integration</li>
+                <li>Heroku/AWS deployment</li>
+            </ul>
+        </div>
+
+        <!-- 3. API Development -->
+        <div class="con">
+            <h3>API Development</h3>
+            <p>Professional API services including:</p>
+            <ul>
+                <li>RESTful API design with Swagger docs</li>
+                <li>Secure authentication systems</li>
+                <li>Search API development</li>
+                <li>Dockerized microservices</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!----------------portfolio----------------->
+<div id="projects">
+    <div class="servi">
+        <p class="pro-title">Projects</p>
+    </div>
+    <div id="project-list">
+        <div class="pro">
+            <div class="project-image-container">
+                <img src="C:\Users\yogyatanegi\Documents\code\Project\GitHub\Portfolio\img\instascrape.png" alt="Instagram Profile Project" class="project-image">
+            </div>
+            <div class="layer">
+                <h5>Instagram Profile Manager</h5>
+                <p>A Python-based project to manage and interact with Instagram profiles. Features include downloading profile pictures, fetching user data through API or scraping, and offering both CLI and GUI interfaces. The project demonstrates skills in web automation and social media API integration.</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="pro">
+            <div class="project-image-container">
+                <img src="C:\Users\yogyatanegi\Documents\code\Project\GitHub\Portfolio\img\smile-detection-project-image.png" alt="Smile Detection Project" class="project-image">
+            </div>
+            <div class="layer">
+                <h5>Selfie Capture with Smile Detection</h5>
+                <p>A computer vision project comparing Haar Feature Selection and Mouth Aspect Ratio (MAR) techniques for smile detection. The system automatically captures selfies when smiles are detected, with comprehensive performance evaluation metrics. Demonstrates expertise in OpenCV, facial recognition, and real-time image processing.</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="pro">
+            <div class="project-image-container">
+                <img src="C:\Users\yogyatanegi\Documents\code\Project\GitHub\Portfolio\img\pomolectron.png" alt="Pomolectron Project" class="project-image">
+            </div>
+            <div class="layer">
+                <h5>Pomolectron</h5>
+                <p>A cross-platform Pomodoro timer application for menubar/tray with features including work/break timers, system notifications, and dark mode. Built with Electron.js, it's available for Windows, macOS and Linux. The project showcases skills in desktop application development and productivity tools creation.</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!----------------Contact----------------->
+<!-- Contact Section -->
+<section id="contact">
+  <div class="contact-container">
+    <!-- Left: Contact Info -->
+    <div class="contact-info">
+      <h2>Contact Me</h2>
+      <p><i class="fa-regular fa-envelope"></i> yogyatanegi04@gmail.com</p>
+      <p><i class="fa-solid fa-phone"></i> 9528737813</p>
+      <div class="social-icons">
+        <a href="https://github.com/yogyatanegi"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/yogyatanegi__/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/yogyata-negi-89262b266"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <a href="Yogyata_Negi.pdf" class="btn" download>Download Resume</a>
+    </div>
+
+    <!-- Right: Contact Form -->
+    <div class="contact-form">
+      <form name="submit-to-google-sheet">
+        <input type="text" name="Name" placeholder="Your Name" required />
+        <input type="email" name="Email" placeholder="Your Email" required />
+        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <span id="msg"></span>
+    </div>
+  </div>
+</section>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyHAO6ezKOqklwsZDVKlrcqwheD4ui7JxgmYg--VzE0_dLZukzYp-ONBF0PsM0W8SaSAw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
